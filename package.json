@@ -1,0 +1,31 @@
+{
+  "name": "entsoe-api",
+  "version": "0.0.1",
+  "description": "Wrapper for the data service provided by ENTSOe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "entsoe",
+    "opendata",
+    "api",
+    "energy",
+    "grid"
+  ],
+  "author": "Thorsten Zoerner <me@thorsten-zoerner.com> (https://blog.stromhaltig.de)",
+  "license": "ISC",
+  "dependencies": {
+    "adm-zip": "^0.4.7",
+    "xml2json": "^0.9.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoernert/node-entsoe-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zoernert/node-entsoe-api/issues"
+  },
+  "homepage": "https://github.com/zoernert/node-entsoe-api#readme"
+}
