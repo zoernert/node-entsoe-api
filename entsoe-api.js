@@ -53,6 +53,7 @@ ENTSOEapi.parseData=function(databuffer) {
 
 ENTSOEapi.prototype.getData=function(options,callback) {
 	var reqStr="";	
+	if(this.webkey=="YOUR-ENTSOE-WEB-API-KEY") return;
 	reqStr="https://transparency.entsoe.eu/api?securityToken="+this.webkey;	
 	for (var k in options){
 			if (options.hasOwnProperty(k)) {
@@ -67,7 +68,7 @@ ENTSOEapi.prototype.getData=function(options,callback) {
 			  res.on('data', (d) => {
 				buf=Buffer.concat([buf, d]);
 			  });
-			  res.on('end', (d) => {
+			  res.on('end', (d) => {				
 				callback(buf);
 			  });
 			  
