@@ -73,6 +73,7 @@ The query functions are pure helpers and you might overwrite all parameters:
 <tr><td>PlannedUnavailabilityOfTransmissionUnits</td></tr>
 <tr><td>ForcedUnavailabilityOfTransmissionUnits</td></tr>
 <tr><td>PlannedUnavailabilityOfOffshore</td></tr>
+<tr><td>dayAheadGenerationForecastWindAndSolar</td></tr>
 </table>
 
 If you like to add a query type - do not hesitate to send a pull request... it is easy :)
@@ -90,3 +91,5 @@ https://blog.stromhaltig.de/
 ## Release History
 
 * 0.0.1 Initial release
+* 0.0.2 Update for STROMDAO / Stromhaltig Tarif usage
+

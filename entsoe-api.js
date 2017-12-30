@@ -150,6 +150,20 @@ ENTSOEapi.query.prototype.actualGenerationPerType  = function() {
 	return ENTSOEapi.query.loadDefaults(this.defaults,options);
 }
 
+ENTSOEapi.query.prototype.dayAheadGenerationForecastWindAndSolar = function() {
+	var options= {
+			documentType:"A69",
+			processType:"A01",
+			outBiddingZone_Domain:"",
+			in_Domain:"",	
+			psrType:"B16",
+			periodStart:ENTSOEapi.buildPeriod(new Date()),
+			periodEnd:ENTSOEapi.buildPeriod(new Date())
+	}
+	
+	return ENTSOEapi.query.loadDefaults(this.defaults,options);
+}
+
 ENTSOEapi.query.prototype.installedGenerationCapacityPerUnit  = function() {
 	var options= {
 			documentType:"A71",
@@ -174,8 +188,6 @@ ENTSOEapi.query.prototype.actualTotalLoad = function() {
 	return ENTSOEapi.query.loadDefaults(this.defaults,options);
 }
 
-
-
 ENTSOEapi.query.prototype.dayAheadTotalLoadForecast = function() {
 	var options= {
 			documentType:"A65",
@@ -187,6 +199,7 @@ ENTSOEapi.query.prototype.dayAheadTotalLoadForecast = function() {
 	
 	return ENTSOEapi.query.loadDefaults(this.defaults,options);
 }
+
 
 ENTSOEapi.query.prototype.weekAheadTotalLoadForecast = function() {
 	var options= {
