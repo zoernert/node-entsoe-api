@@ -1,6 +1,6 @@
 {
   "name": "entsoe-api",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Wrapper for the data service provided by ENTSOe",
   "main": "index.js",
   "scripts": {

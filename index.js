@@ -1,5 +1,5 @@
 require("./entsoe-api.js");
-var entsoeApi = new ENTSOEapi("---YOUR WEB API KEY HERE ---");
+var entsoeApi = new ENTSOEapi("YOUR-ENTSOE-WEB-API-KEY");
 
 
 periodstart=new Date();
